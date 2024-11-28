@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"xpytest\startup_stm32f103xb.o"
+"xpytest\main.o"
+"xpytest\gpio.o"
+"xpytest\stm32f1xx_it.o"
+"xpytest\stm32f1xx_hal_msp.o"
+"xpytest\stm32f1xx_hal_gpio_ex.o"
+"xpytest\stm32f1xx_hal_tim.o"
+"xpytest\stm32f1xx_hal_tim_ex.o"
+"xpytest\stm32f1xx_hal.o"
+"xpytest\stm32f1xx_hal_rcc.o"
+"xpytest\stm32f1xx_hal_rcc_ex.o"
+"xpytest\stm32f1xx_hal_gpio.o"
+"xpytest\stm32f1xx_hal_dma.o"
+"xpytest\stm32f1xx_hal_cortex.o"
+"xpytest\stm32f1xx_hal_pwr.o"
+"xpytest\stm32f1xx_hal_flash.o"
+"xpytest\stm32f1xx_hal_flash_ex.o"
+"xpytest\stm32f1xx_hal_exti.o"
+"xpytest\system_stm32f1xx.o"
+--strict --scatter "XPYtest\XPYtest.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "XPYtest.map" -o XPYtest\XPYtest.axf
